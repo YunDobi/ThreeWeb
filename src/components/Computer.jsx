@@ -9,7 +9,19 @@ const Computer = () => {
     <mesh>
       <hemisphereLight intensity={0.15} groundColor='black' />
       <pointLight intensity={1} />
-      <primitive object={computer.scene} scale={0.75} />
+      <spotLight
+        position={[-20, 40, 10]}
+        angle={0.12}
+        penumbra={1}
+        intensity={1}
+        castShadow
+      />
+      <primitive
+        object={computer.scene}
+        scale={0.75}
+        position={[0, -3.8, -1.8]}
+        rotation={[0, -0.2, -0.1]}
+      />
     </mesh>
   );
 };
