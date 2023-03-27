@@ -22,16 +22,16 @@ export const NavBar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
+          <div>
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>
-            Yuncheol &nbsp;
-            <span
-              className='sm:block
-           hidden
-           '
-            >
-              | Full Stack Developer
-            </span>
+            Yuncheol
           </p>
+            <span
+              className=' text-white text-[18px] font-bold cursor-pointer sm:block hidden'
+            >Full Stack Developer
+            </span>
+
+          </div>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
