@@ -2,6 +2,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
 import { Hero } from './components/Hero/Hero';
 import { About } from './components/About';
+import Tech from './components/Tech';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Hero />
         </div>
         <About />
+        <Tech />
       </div>
     </BrowserRouter>
   );
