@@ -1,4 +1,4 @@
-import tilt from 'react-tilt';
+import Tilt from 'react-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../style';
@@ -8,15 +8,62 @@ import { SectionWrapper } from '../higherImprtant';
 import { projects } from '../constant';
 import { fadeIn, textVariant } from '../utils/motion';
 
-
-const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
+const ProjectCard = ({
+  index,
+  name,
+  description,
+  tags,
+  image,
+  source_code_link,
+}) => {
   return (
-    <motion.div>
-      test
-    </motion.div>
-  )
+    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
+      <Tilt
+        option={{
+          max: 45,
+          scale: 1,
+          speed: 45,
+        }}
+        className=' bg-blue-300 bg-opacity-10 p-5 rounded-2xl sm:w-[360px] w-full'
+      >
+        <div className='relative w-full h-[230px] group'>
+          <img
+            src={image}
+            alt={name}
+            className='w-full h-full object-cover rounded-2xl'
+          />
 
-}
+          <div className='absolute inset-0 justify-end m-3 card-img_hover hidden group-hover:flex'>
+            // not sure what is _blank
+            <div
+              onClick={() => window.open(source_code_link, '_blank')}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <img
+                src={github}
+                alt='github'
+                className='w-1/2 h-1/2 object-contain'
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className='mt-5'>
+          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          {/* if length is over 170, describe as a ... */}
+          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+        </div>
+
+        <div className=' mt-4 flex flex-wrap gap-2'>
+        {tags.map((tag) => 
+        <p key={tag.name} className={`text-[14px] ${tag.color}`}>#{tag.name}</p>
+        )}
+
+      </div>
+      </Tilt>
+    </motion.div>
+  );
+};
 
 const WorkBody = () => {
   return (
@@ -38,8 +85,8 @@ const WorkBody = () => {
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => {
           return (
-            <ProjectCard key={`project-${index}`} index ={index} {...project} />
-          )
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          );
         })}
       </div>
     </>

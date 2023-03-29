@@ -4,6 +4,8 @@ import { Hero } from './components/Hero/Hero';
 import { About } from './components/About';
 import Tech from './components/Tech';
 import Work from './components/Work';
+import Contact from './components/Contact';
+import { StarsCanvas } from './components/StarDust';
 
 
 function App() {
@@ -17,6 +19,10 @@ function App() {
         <About />
         <Tech />
         <Work />
+        <div className=' relative z-0'>
+          <Contact />
+          <StarsCanvas />
+        </div>
       </div>
     </BrowserRouter>
   );
