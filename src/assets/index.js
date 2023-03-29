@@ -30,6 +30,10 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import latch from "./latch.png"
+import cookking from "./cookking.png";
+import interviewer from "./Interviewer.png";
+
 export {
   logo,
   backend,
@@ -59,4 +63,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  latch,
+  cookking,
+  interviewer
 };

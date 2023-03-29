@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-// import { EmailJSResponseStatus} from "@emailjs/browser"
+import {emailjs} from "@emailjs/browser"
 
 import { styles } from '../style';
 import { EarthCanvas } from './EarthCanvas';
@@ -17,11 +17,13 @@ export const ContactBody = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-
+    const {name, value} =e.target;
+    setForm({...form, [name]: value})
   };
 
+  // have to fix
   const handleSubmit = (e) => {
-    preventDefault();
+    e.preventDefault();
   };
 
   return (

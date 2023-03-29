@@ -30,11 +30,11 @@ const ProjectCard = ({
           <img
             src={image}
             alt={name}
-            className='w-full h-full object-cover rounded-2xl'
+            className=' w-full h-full rounded-2xl'
           />
 
           <div className='absolute inset-0 justify-end m-3 card-img_hover hidden group-hover:flex'>
-            // not sure what is _blank
+            {/* // not sure what is _blank */}
             <div
               onClick={() => window.open(source_code_link, '_blank')}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
