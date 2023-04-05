@@ -46,6 +46,15 @@ const ComputerCanvas = () => {
     }
   }, [])
 
+//   function animate() {
+//     requestAnimationFrame(animate)
+
+//     cube.rotation.x += 0.01
+//     cube.rotation.y += 0.01
+
+//     render()
+// }
+
   return (
     <Canvas
       frameloop='demand'
@@ -58,6 +67,8 @@ const ComputerCanvas = () => {
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
+          autoRotate={true}
+          rotateSpeed={0.05}
         />
         <Computer isMobile={isMobile} />
       </Suspense>
