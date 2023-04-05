@@ -14,6 +14,7 @@ import {
   mongodb,
   git,
   figma,
+  nextjs,
   docker,
   meta,
   starbucks,
@@ -49,16 +50,16 @@ const services = [
     icon: web,
   },
   {
+    title: '"Can do" Attribute',
+    icon: creator,
+  },
+  {
     title: "Communication",
     icon: mobile,
   },
   {
     title: "Strong Time Management",
     icon: backend,
-  },
-  {
-    title: "Expereinced as a Full Stack Developer",
-    icon: creator,
   },
 ];
 
@@ -86,6 +87,10 @@ const technologies = [
   {
     name: "Redux Toolkit",
     icon: redux,
+  },
+  {
+    name: "Next JS",
+    icon: nextjs
   },
   // {
   //   name: "Tailwind CSS",
