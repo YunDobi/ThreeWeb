@@ -34,6 +34,7 @@ import tripguide from "./tripguide.png";
 import latch from "./latch.png"
 import cookking from "./cookking.png";
 import interviewer from "./Interviewer.png";
+import estate from "./estate.png";
 
 export {
   logo,
@@ -67,5 +68,6 @@ export {
   tripguide,
   latch,
   cookking,
+  estate,
   interviewer
 };

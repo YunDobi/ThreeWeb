@@ -27,6 +27,7 @@ import {
   threejs,
   cookking,
   interviewer,
+  estate
 } from "../assets";
 
 export const navLinks = [
@@ -178,31 +179,52 @@ const projects = [
     image: latch,
     source_code_link: "https://github.com/Erica-jihyeon/Latch",
   },
-  {
-    name: "Interviewer Scheduler",
+    {
+    name: "Real-Estate-App",
     description:
-      "Scheduler app for booking with a mentor in avaiable time. this project is built by React and API server with PostgreSQL, and some frameworks which are storybook, Jest and Cypress.",
+      "This is a Next.js project bootstrapped with create-next-app. Also I used Bayut API for fetching the Saudi Arabia real estate data and Chakra-UI for desgining.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "nodejs",
+        name: "nextjs",
         color: "pink-text-gradient",
       },
       {
-        name: "postgresql",
-        color: "green-text-gradient",
-      },
-      {
-        name: "cypress",
+        name: "Chakra-UI",
         color: "violet-text-gradient",
       },
     ],
-    image: interviewer,
-    source_code_link: "https://github.com/YunDobi/interviewer-scheduler",
+    image: estate,
+    source_code_link: "https://github.com/YunDobi/Real-Estate-App",
   },
+  // {
+  //   name: "Interviewer Scheduler",
+  //   description:
+  //     "Scheduler app for booking with a mentor in avaiable time. this project is built by React and API server with PostgreSQL, and some frameworks which are storybook, Jest and Cypress.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "nodejs",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "postgresql",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "cypress",
+  //       color: "violet-text-gradient",
+  //     },
+  //   ],
+  //   image: interviewer,
+  //   source_code_link: "https://github.com/YunDobi/interviewer-scheduler",
+  // },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
