@@ -5,6 +5,12 @@ import { styles } from '../style';
 import { EarthCanvas } from './EarthCanvas';
 import { SectionWrapper } from '../higherImprtant';
 import { slideIn } from '../utils/motion';
+import emailjs from "@emailjs/browser"
+
+
+// template_5wqchy6
+// service_7a9e3io
+// ViFPKaKUHoW6UqHL5ch0a
 
 export const ContactBody = () => {
   const formRef = useRef();
@@ -18,11 +24,34 @@ export const ContactBody = () => {
   const handleChange = (e) => {
     const {name, value} =e.target;
     setForm({...form, [name]: value})
-  };
 
-  // have to fix
+  };
+  
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true)
+
+    emailjs.send('service_7a9e3io','template_5wqchy6',{
+      from_name: form.name,
+      to_name: 'Yuncheol Lee',
+      from_email: form.email,
+      to_email: 'lyc1353@gmail.com',
+      message: form.message
+    },
+    'JKaWT-oxXaPWVQLom')
+    .then(() => {
+        setLoading(false)
+        alert('Thank you! I will contact you as soon as possible!');
+  
+        setForm({
+          name: '',
+          email: '',
+          message: ''
+        })
+    }, (error) => {
+      console.log(error);
+      alert('Someting is went WRONG!')
+    })
   };
 
   return (
