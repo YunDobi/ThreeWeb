@@ -18,7 +18,7 @@ export const Hero = () => {
           <h1 className={`${styles.heroHeadText}`}>
             Hi! I'm <span className='text-[#915eff]'>Yuncheol Lee</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>I am a full stack developer <br className='sm:block hidden' />who passionate and love communication</p>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>I am a AutoCAD Technician <br className='sm:block hidden' />who passionate and love communication</p>
         </div>
       </div>
       <ComputerCanvas />
