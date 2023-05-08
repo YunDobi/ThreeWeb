@@ -27,7 +27,11 @@ import {
   threejs,
   cookking,
   interviewer,
-  estate
+  estate,
+
+  LargetEquipment,
+  singleLine,
+  CTransformer
 } from "../assets";
 
 export const navLinks = [
@@ -134,71 +138,71 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Cookking",
+    name: "Large Equipments Location drawing",
     description:
-      "Recipe website with infinite scrolling based on the ratings of food. Mostly I worked on building reliable, reusable components with Redux and advanced hooks, and I Built an infinity scrolling pagination with image slideshow and complicated API call",
+      "Drafting the location of the large equipment, such as motors, into the building. Follow the IEEE rules to install the correct models and locations.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "redux",
-        color: "violet-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "pink-text-gradient",
-      },
+      // {
+      //   name: "react",
+      //   color: "blue-text-gradient",
+      // },
+      // {
+      //   name: "redux",
+      //   color: "violet-text-gradient",
+      // },
+      // {
+      //   name: "mongodb",
+      //   color: "green-text-gradient",
+      // },
+      // {
+      //   name: "nodejs",
+      //   color: "pink-text-gradient",
+      // },
     ],
-    image: cookking,
-    source_code_link: "https://github.com/cook-king-van/cook-king",
+    image: LargetEquipment,
+    source_code_link: "https://drive.google.com/drive/folders/13x1eUAy2BavKvs2St_vZdDUfQbpj4wbL?usp=sharing",
   },
   {
-    name: "Latch",
+    name: "Single Line Diagram",
     description:
-      "Real-time language exchange app built in 3 member-group project. In this project, we utilized all the knowledge that we learn from the Lighthouse Lab and spent a lot of efforts on deciding and planning the topic and design.",
+      "Drafting of a single-line diagram for MCC 30 motors It required two separate drawings to describe the entire motor system. Download the files and look at the second drawing too.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "postgresql",
-        color: "green-text-gradient",
-      },
+      // {
+      //   name: "react",
+      //   color: "blue-text-gradient",
+      // },
+      // {
+      //   name: "nodejs",
+      //   color: "pink-text-gradient",
+      // },
+      // {
+      //   name: "postgresql",
+      //   color: "green-text-gradient",
+      // },
     ],
-    image: latch,
-    source_code_link: "https://github.com/Erica-jihyeon/Latch",
+    image: singleLine,
+    source_code_link: "https://drive.google.com/drive/folders/15XqXpwyJjmZYI6gD3-nkxWFyFwGdF3lG?usp=sharing",
   },
     {
-    name: "Real-Estate-App",
+    name: "Current Transformer Diagram",
     description:
-      "This is a Next.js project bootstrapped with create-next-app. Also I used Bayut API for fetching the Saudi Arabia real estate data and Chakra-UI for desgining.",
+      "Diagram for the 737 Current Transformer Also, download the files for more detail about the Three Creeks transformer overcurrent protection demolition with a new relay installed.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nextjs",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Chakra-UI",
-        color: "violet-text-gradient",
-      },
+      // {
+      //   name: "react",
+      //   color: "blue-text-gradient",
+      // },
+      // {
+      //   name: "nextjs",
+      //   color: "pink-text-gradient",
+      // },
+      // {
+      //   name: "Chakra-UI",
+      //   color: "violet-text-gradient",
+      // },
     ],
-    image: estate,
-    source_code_link: "https://github.com/YunDobi/Real-Estate-App",
+    image: CTransformer,
+    source_code_link: "https://drive.google.com/drive/folders/1KLjt3t3CypS7uHzr-QougmQlcEjzX7Ru?usp=sharing",
   },
   // {
   //   name: "Interviewer Scheduler",
