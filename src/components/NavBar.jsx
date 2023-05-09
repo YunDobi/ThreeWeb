@@ -28,7 +28,7 @@ export const NavBar = () => {
           </p>
             <span
               className=' text-white text-[18px] font-bold cursor-pointer sm:block hidden'
-            >Full Stack Developer
+            >AutoCAD Technician
             </span>
 
           </div>
