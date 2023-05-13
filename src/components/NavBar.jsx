@@ -8,7 +8,7 @@ import { logo, menu, close } from '../assets/';
 export const NavBar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
-  
+
   return (
     <nav
       className={`${styles.paddingX} w-full flex item-center py-5 fixed top-0 z-20 bg-primary`}
@@ -22,16 +22,18 @@ export const NavBar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-[54px] h-[54px] object-contain' />
+          <img
+            src={logo}
+            alt='logo'
+            className='w-[54px] h-[54px] object-contain'
+          />
           <div>
-          <p className='text-white text-[18px] font-bold cursor-pointer flex'>
-            Yuncheol
-          </p>
-            <span
-              className=' text-white text-[18px] font-bold cursor-pointer sm:block hidden'
-            >Full Stack Developer
+            <p className='text-white text-[18px] font-bold cursor-pointer flex'>
+              Yuncheol
+            </p>
+            <span className=' text-white text-[18px] font-bold cursor-pointer sm:block hidden'>
+              Full Stack Developer
             </span>
-
           </div>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
