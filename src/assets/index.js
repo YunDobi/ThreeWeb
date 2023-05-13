@@ -36,6 +36,10 @@ import cookking from "./cookking.png";
 import interviewer from "./Interviewer.png";
 import estate from "./estate.png";
 
+import LargetEquipment from "./LargeEquipment.png";
+import singleLine from "./singleLine.png";
+import CTransformer from "./CT transformer.png"
+
 export {
   logo,
   backend,
@@ -69,5 +73,8 @@ export {
   latch,
   cookking,
   estate,
-  interviewer
+  interviewer,
+  LargetEquipment,
+  singleLine,
+  CTransformer
 };
