@@ -28,15 +28,7 @@ import {
   cookking,
   interviewer,
   estate,
-<<<<<<< HEAD
 } from '../assets';
-=======
-
-  LargetEquipment,
-  singleLine,
-  CTransformer
-} from "../assets";
->>>>>>> 40f63c389e627e73360a695f5391b864cf479618
 
 export const navLinks = [
   {
