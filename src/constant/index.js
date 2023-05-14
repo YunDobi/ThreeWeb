@@ -28,7 +28,15 @@ import {
   cookking,
   interviewer,
   estate,
+<<<<<<< HEAD
 } from '../assets';
+=======
+
+  LargetEquipment,
+  singleLine,
+  CTransformer
+} from "../assets";
+>>>>>>> 40f63c389e627e73360a695f5391b864cf479618
 
 export const navLinks = [
   {
@@ -129,6 +137,7 @@ const testimonials = [];
 
 const projects = [
   {
+<<<<<<< HEAD
     name: 'Cookking',
     description:
       'Recipe website with infinite scrolling based on the ratings of food. Mostly I worked on building reliable, reusable components with Redux and advanced hooks, and I Built an infinity scrolling pagination with image slideshow and complicated API call',
@@ -194,6 +203,73 @@ const projects = [
     ],
     image: estate,
     source_code_link: 'https://github.com/YunDobi/Real-Estate-App',
+=======
+    name: "Large Equipments Location drawing",
+    description:
+      "Drafting the location of the large equipment, such as motors, into the building. Follow the IEEE rules to install the correct models and locations.",
+    tags: [
+      // {
+      //   name: "react",
+      //   color: "blue-text-gradient",
+      // },
+      // {
+      //   name: "redux",
+      //   color: "violet-text-gradient",
+      // },
+      // {
+      //   name: "mongodb",
+      //   color: "green-text-gradient",
+      // },
+      // {
+      //   name: "nodejs",
+      //   color: "pink-text-gradient",
+      // },
+    ],
+    image: LargetEquipment,
+    source_code_link: "https://drive.google.com/drive/folders/13x1eUAy2BavKvs2St_vZdDUfQbpj4wbL?usp=sharing",
+  },
+  {
+    name: "Single Line Diagram",
+    description:
+      "Drafting of a single-line diagram for MCC 30 motors It required two separate drawings to describe the entire motor system. Download the files and look at the second drawing too.",
+    tags: [
+      // {
+      //   name: "react",
+      //   color: "blue-text-gradient",
+      // },
+      // {
+      //   name: "nodejs",
+      //   color: "pink-text-gradient",
+      // },
+      // {
+      //   name: "postgresql",
+      //   color: "green-text-gradient",
+      // },
+    ],
+    image: singleLine,
+    source_code_link: "https://drive.google.com/drive/folders/15XqXpwyJjmZYI6gD3-nkxWFyFwGdF3lG?usp=sharing",
+  },
+    {
+    name: "Current Transformer Diagram",
+    description:
+      "Diagram for the 737 Current Transformer Also, download the files for more detail about the Three Creeks transformer overcurrent protection demolition with a new relay installed.",
+    tags: [
+      // {
+      //   name: "react",
+      //   color: "blue-text-gradient",
+      // },
+      // {
+      //   name: "nextjs",
+      //   color: "pink-text-gradient",
+      // },
+      // {
+      //   name: "Chakra-UI",
+      //   color: "violet-text-gradient",
+      // },
+    ],
+    image: CTransformer,
+    source_code_link: "https://drive.google.com/drive/folders/1KLjt3t3CypS7uHzr-QougmQlcEjzX7Ru?usp=sharing",
+>>>>>>> 40f63c389e627e73360a695f5391b864cf479618
   },
 
   // {
