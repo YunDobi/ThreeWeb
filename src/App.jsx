@@ -7,7 +7,6 @@ import Work from './components/Work';
 import Contact from './components/Contact';
 import { StarsCanvas } from './components/StarDust';
 
-
 function App() {
   return (
     <BrowserRouter>
@@ -17,7 +16,7 @@ function App() {
           <Hero />
         </div>
         <About />
-        <Tech />
+        <Tech /> 
         <Work />
         <div className=' relative z-0'>
           <Contact />
