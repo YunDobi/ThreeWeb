@@ -27,11 +27,7 @@ const ProjectCard = ({
         className=' bg-blue-300 bg-opacity-10 p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div className='relative w-full h-[230px] group'>
-          <img
-            src={image}
-            alt={name}
-            className=' w-full h-full rounded-2xl'
-          />
+          <img src={image} alt={name} className=' w-full h-full rounded-2xl' />
 
           <div className='absolute inset-0 justify-end m-3 card-img_hover hidden group-hover:flex'>
             {/* // not sure what is _blank */}
@@ -55,11 +51,12 @@ const ProjectCard = ({
         </div>
 
         <div className=' mt-4 flex flex-wrap gap-2'>
-        {tags.map((tag) => 
-        <p key={tag.name} className={`text-[14px] ${tag.color}`}>#{tag.name}</p>
-        )}
-
-      </div>
+          {tags.map((tag) => (
+            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+              #{tag.name}
+            </p>
+          ))}
+        </div>
       </Tilt>
     </motion.div>
   );

@@ -1,16 +1,16 @@
-import React from "react";
-import Tilt from "react-tilt";
-import { motion } from "framer-motion";
+import React from 'react';
+import Tilt from 'react-tilt';
+import { motion } from 'framer-motion';
 
-import { styles } from "../style";
-import { services } from "../constant/index";
-import { SectionWrapper } from "../higherImprtant";
-import { fadeIn, textVariant } from "../utils/motion";
+import { styles } from '../style';
+import { services } from '../constant/index';
+import { SectionWrapper } from '../higherImprtant';
+import { fadeIn, textVariant } from '../utils/motion';
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
       <div
@@ -44,10 +44,14 @@ const AboutBody = () => {
       </motion.div>
 
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
+        variants={fadeIn('', '', 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I recently graduated from the Lighthouse Lab with diploma in Web development. Additionally, I have two years diploma that I achieve from NAIT with Electrical Engineering Technology. I am passionate to learning new technologies, and love to communicate with others to share the knowledge, and I have strong time management skill.
+        I recently graduated from the Lighthouse Lab with diploma in Web
+        development. Additionally, I have two years diploma that I achieve from
+        NAIT with Electrical Engineering Technology. I am passionate to learning
+        new technologies, and love to communicate with others to share the
+        knowledge, and I have strong time management skill.
         {/* I have spent more than 5 years on finding what I want to do in my future life, and finally, I have found my passion in software engineering. I am a person who never stops learning, and curiosity is my fuel. This allows me to overcome the failures, turning them into wisdom. */}
       </motion.p>
 
@@ -60,8 +64,6 @@ const AboutBody = () => {
   );
 };
 
-export function About () {
-  return (
-    SectionWrapper(AboutBody, "about")
-  )
+export function About() {
+  return SectionWrapper(AboutBody, 'about');
 }
