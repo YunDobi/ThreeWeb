@@ -18,28 +18,28 @@ export const Hero = () => {
           <h1 className={`${styles.heroHeadText}`}>
             Hi! I'm <span className='text-[#915eff]'>Yuncheol Lee</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>I am a full stack developer <br className='sm:block hidden' />who passionate self-starter and love communication</p>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+            I am a full stack developer <br className='sm:block hidden' />
+            who passionate self-starter and love communication
+          </p>
         </div>
       </div>
       <ComputerCanvas />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href="#about">
+        <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-separate flex justify-center items-start p-2'>
             <motion.div
-            animate={{
-              y: [0,24,0]
-            }}
-            transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              repeatType: 'loop'
-            }}
-            className= 'w-4 h-4 rounded-full bg-secondary mb-1'
-            >
-              
-            </motion.div>
-
+              animate={{
+                y: [0, 24, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: 'loop',
+              }}
+              className='w-4 h-4 rounded-full bg-secondary mb-1'
+            ></motion.div>
           </div>
         </a>
       </div>
