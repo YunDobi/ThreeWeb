@@ -1,5 +1,5 @@
-import React from 'react'
-import {motion} from "framer-motion";
+import React from 'react';
+import { motion } from 'framer-motion';
 import { styles } from '../style';
 
 import { textVariant } from '../utils/motion';
@@ -22,9 +22,8 @@ const TechBody = () => {
         ))}
       </div>
     </>
-  )
-}
-const Tech = () => 
-  SectionWrapper(TechBody, "tech")
+  );
+};
+const Tech = () => SectionWrapper(TechBody, 'tech');
 
 export default Tech;

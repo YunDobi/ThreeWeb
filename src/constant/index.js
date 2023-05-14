@@ -28,30 +28,34 @@ import {
   cookking,
   interviewer,
   estate,
+<<<<<<< HEAD
+} from '../assets';
+=======
 
   LargetEquipment,
   singleLine,
   CTransformer
 } from "../assets";
+>>>>>>> 40f63c389e627e73360a695f5391b864cf479618
 
 export const navLinks = [
   {
-    id: "about",
-    title: "About",
+    id: 'about',
+    title: 'About',
   },
   {
-    id: "work",
-    title: "Work",
+    id: 'work',
+    title: 'Work',
   },
   {
-    id: "contact",
-    title: "Contact",
+    id: 'contact',
+    title: 'Contact',
   },
 ];
 
 const services = [
   {
-    title: "Passionate",
+    title: 'Passionate',
     icon: web,
   },
   {
@@ -59,66 +63,66 @@ const services = [
     icon: creator,
   },
   {
-    title: "Communication",
+    title: 'Communication',
     icon: mobile,
   },
   {
-    title: "Strong Time Management",
+    title: 'Strong Time Management',
     icon: backend,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: 'HTML 5',
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: 'CSS 3',
     icon: css,
   },
   {
-    name: "JavaScript",
+    name: 'JavaScript',
     icon: javascript,
   },
   {
-    name: "TypeScript",
+    name: 'TypeScript',
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: 'React JS',
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
+    name: 'Redux Toolkit',
     icon: redux,
   },
   {
-    name: "Next JS",
-    icon: nextjs
+    name: 'Next JS',
+    icon: nextjs,
   },
   // {
   //   name: "Tailwind CSS",
   //   icon: tailwind,
   // },
   {
-    name: "Node JS",
+    name: 'Node JS',
     icon: nodejs,
   },
   {
-    name: "MongoDB",
+    name: 'MongoDB',
     icon: mongodb,
   },
   {
-    name: "Three JS",
+    name: 'Three JS',
     icon: threejs,
   },
   {
-    name: "git",
+    name: 'git',
     icon: git,
   },
   {
-    name: "figma",
+    name: 'figma',
     icon: figma,
   },
   // {
@@ -127,17 +131,79 @@ const technologies = [
   // },
 ];
 
-const experiences = [
+const experiences = [];
 
-]
-
-const testimonials = [
-
-]
-
+const testimonials = [];
 
 const projects = [
   {
+<<<<<<< HEAD
+    name: 'Cookking',
+    description:
+      'Recipe website with infinite scrolling based on the ratings of food. Mostly I worked on building reliable, reusable components with Redux and advanced hooks, and I Built an infinity scrolling pagination with image slideshow and complicated API call',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'redux',
+        color: 'violet-text-gradient',
+      },
+      {
+        name: 'mongodb',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'nodejs',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: cookking,
+    source_code_link: 'https://github.com/cook-king-van/cook-king',
+  },
+  {
+    name: 'Latch',
+    description:
+      'Real-time language exchange app built in 3 member-group project. In this project, we utilized all the knowledge that we learn from the Lighthouse Lab and spent a lot of efforts on deciding and planning the topic and design.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'nodejs',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'postgresql',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: latch,
+    source_code_link: 'https://github.com/Erica-jihyeon/Latch',
+  },
+  {
+    name: 'Real-Estate-App',
+    description:
+      'This is a Next.js project bootstrapped with create-next-app. Also I used Bayut API for fetching the Saudi Arabia real estate data and Chakra-UI for desgining.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'nextjs',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'Chakra-UI',
+        color: 'violet-text-gradient',
+      },
+    ],
+    image: estate,
+    source_code_link: 'https://github.com/YunDobi/Real-Estate-App',
+=======
     name: "Large Equipments Location drawing",
     description:
       "Drafting the location of the large equipment, such as motors, into the building. Follow the IEEE rules to install the correct models and locations.",
@@ -203,8 +269,9 @@ const projects = [
     ],
     image: CTransformer,
     source_code_link: "https://drive.google.com/drive/folders/1KLjt3t3CypS7uHzr-QougmQlcEjzX7Ru?usp=sharing",
+>>>>>>> 40f63c389e627e73360a695f5391b864cf479618
   },
-  
+
   // {
   //   name: "Interviewer Scheduler",
   //   description:
