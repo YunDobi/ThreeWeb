@@ -6,6 +6,7 @@ import Tech from './components/Tech';
 import Work from './components/Work';
 import Contact from './components/Contact';
 import { StarsCanvas } from './components/StarDust';
+import { Elec } from './components/ElectricalWork';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         </div>
         <About />
         <Tech /> 
+        <Elec />
         <Work />
         <div className=' relative z-0'>
           <Contact />

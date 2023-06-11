@@ -28,6 +28,9 @@ import {
   cookking,
   interviewer,
   estate,
+  LargetEquipment,
+  singleLine,
+  CTransformer
 } from '../assets';
 
 export const navLinks = [
@@ -224,4 +227,30 @@ const projects = [
   // },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const elecProjects = [
+  {
+    name: "Large Equipments Location drawing",
+    description:
+      "Drafting the location of the large equipment, such as motors, into the building. Follow the IEEE rules to install the correct models and locations.",
+    image: LargetEquipment,
+    source_code_link: "https://drive.google.com/drive/folders/13x1eUAy2BavKvs2St_vZdDUfQbpj4wbL?usp=sharing",
+  },
+  {
+    name: "Single Line Diagram",
+    description:
+      "Drafting of a single-line diagram for MCC 30 motors It required two separate drawings to describe the entire motor system. Download the files and look at the second drawing too.",
+ 
+    image: singleLine,
+    source_code_link: "https://drive.google.com/drive/folders/15XqXpwyJjmZYI6gD3-nkxWFyFwGdF3lG?usp=sharing",
+  },
+    {
+    name: "Current Transformer Diagram",
+    description:
+      "Diagram for the 737 Current Transformer Also, download the files for more detail about the Three Creeks transformer overcurrent protection demolition with a new relay installed.",
+ 
+    image: CTransformer,
+    source_code_link: "https://drive.google.com/drive/folders/1KLjt3t3CypS7uHzr-QougmQlcEjzX7Ru?usp=sharing",
+  }
+];
+
+export { services, technologies, experiences, testimonials, projects, elecProjects };
