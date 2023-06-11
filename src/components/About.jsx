@@ -3,7 +3,8 @@ import Tilt from 'react-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../style';
-import { services } from '../constant/index';
+// import { services } from '../constant/index';
+import { projects } from '../constant';
 import { SectionWrapper } from '../higherImprtant';
 import { fadeIn, textVariant } from '../utils/motion';
 
@@ -52,13 +53,12 @@ const AboutBody = () => {
         NAIT with Electrical Engineering Technology. I am passionate to learning
         new technologies, and love to communicate with others to share the
         knowledge, and I have strong time management skill.
-        {/* I have spent more than 5 years on finding what I want to do in my future life, and finally, I have found my passion in software engineering. I am a person who never stops learning, and curiosity is my fuel. This allows me to overcome the failures, turning them into wisdom. */}
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
+        {projects.map((service, index) => {
+          return <ServiceCard key={service.name} index={index} icon={service.image} title={service.name} />;
+        })}
       </div>
     </>
   );

@@ -11,9 +11,9 @@ export const NavBar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex item-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full flex item-center py-2 fixed top-0 z-20 bg-primary`}
     >
-      <div className='flex justify-between max-w-7x1 mx-auto w-full'>
+      <div className='flex justify-between max-w-7x1 mx-auto w-full items-center'>
         <Link
           to={'/'}
           className='flex item-center gap-2'
@@ -27,14 +27,14 @@ export const NavBar = () => {
             alt='logo'
             className='w-[54px] h-[54px] object-contain'
           />
-          <div>
-            <p className='text-white text-[18px] font-bold cursor-pointer flex'>
-              Yuncheol
+            <p className='text-white text-[18px] font-bold cursor-pointer flex items-center'>
+              Yuncheol Lee
             </p>
+          {/* <div>
             <span className=' text-white text-[18px] font-bold cursor-pointer sm:block hidden'>
               Full Stack Developer
             </span>
-          </div>
+          </div> */}
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
