@@ -15,23 +15,21 @@ export const NavBar = () => {
       <div className='flex justify-between max-w-7x1 mx-auto w-full'>
         <Link
           to={'/'}
-          className='flex item-center gap'
+          className='flex item-center gap-2'
           onClick={() => {
             setActive('');
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-[54px] h-[54px] object-contain' style={{marginRight: "8px"}} />
-          <div>
+          <img
+            src={logo}
+            alt='logo'
+            className='w-[54px] h-[54px] object-contain'
+            style={{ marginRight: '8px' }}
+          />
           <p className='text-white text-[18px] font-bold cursor-pointer flex items-center'>
             Yuncheol Lee
           </p>
-            {/* <span
-              className=' text-white text-[18px] font-bold cursor-pointer sm:block hidden'
-            >AutoCAD Technician
-            </span> */}
-
-          </div>
         </Link>
         <ul className='list-none hidden sm:flex flex-row'>
           {navLinks.map((link) => (
@@ -41,7 +39,7 @@ export const NavBar = () => {
                 active === link.title ? 'text-white' : 'text-secondary'
               } hover:text-white cursor-pointer text-[18px] font-medium`}
               onClick={() => setActive(link.title)}
-              style={{margin:"10px 20px"}}
+              style={{ margin: '10px 20px' }}
             >
               <a href={`#${link.id}`}>{link.title}</a>
             </li>

@@ -17,7 +17,7 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)} style={{margin: "10px"}}>
       <Tilt
         option={{
           max: 45,
@@ -79,7 +79,7 @@ const WorkBody = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-[28px]'>
+      <div className='mt-20 flex flex-wrap'>
         {projects.map((project, index) => {
           return (
             <ProjectCard key={`project-${index}`} index={index} {...project} />
