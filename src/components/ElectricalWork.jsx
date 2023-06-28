@@ -44,7 +44,7 @@ const WorkBody = () => {
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
 
-      <div className='mt-20 flex flex-wrap gap-10 justify-around'>
+      <div className='mt-20 flex flex-wrap gap-[40px] justify-around'>
         {elecProjects.map((service, index) => {
           return (
             <ServiceCard key={service.name} index={index} service={service} />
