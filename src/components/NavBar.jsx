@@ -24,12 +24,12 @@ export const NavBar = () => {
           <img src={logo} alt='logo' className='w-[54px] h-[54px] object-contain' style={{marginRight: "8px"}} />
           <div>
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>
-            Yuncheol
+            Yuncheol Lee
           </p>
-            <span
+            {/* <span
               className=' text-white text-[18px] font-bold cursor-pointer sm:block hidden'
             >AutoCAD Technician
-            </span>
+            </span> */}
 
           </div>
         </Link>
