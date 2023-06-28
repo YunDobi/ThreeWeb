@@ -23,7 +23,7 @@ export const NavBar = () => {
         >
           <img src={logo} alt='logo' className='w-[54px] h-[54px] object-contain' style={{marginRight: "8px"}} />
           <div>
-          <p className='text-white text-[18px] font-bold cursor-pointer flex'>
+          <p className='text-white text-[18px] font-bold cursor-pointer flex items-center'>
             Yuncheol Lee
           </p>
             {/* <span
