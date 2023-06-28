@@ -36,7 +36,7 @@ export const NavBar = () => {
             </span>
           </div> */}
         </Link>
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-[40px]'>
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -63,7 +63,7 @@ export const NavBar = () => {
               !toggle ? 'hidden' : 'flex'
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-x1`}
           >
-            <ul className='list-none flex justify-end items-start flex-col gap-4'>
+            <ul className='list-none flex justify-end items-start flex-col gap-[16px]'>
               {navLinks.map((link) => (
                 <li
                   key={link.id}
