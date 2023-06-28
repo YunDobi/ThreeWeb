@@ -36,7 +36,7 @@ export const NavBar = () => {
             </span>
           </div> */}
         </Link>
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-[40px]'>
           {navLinks.map((link) => (
             <li
               key={link.id}

@@ -197,7 +197,6 @@ const projects = [
     ],
     image: estate,
     source_code_link: 'https://github.com/YunDobi/Real-Estate-App',
-
   },
 
   // {
