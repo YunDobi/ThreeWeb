@@ -7,5 +7,3 @@ https://yuncheol.vercel.app
 
 <img width="1437" alt="Screen Shot 2023-03-28 at 10 56 39 PM" src="https://user-images.githubusercontent.com/88572626/228439737-ba022cb1-94ee-4680-969a-23e2dc7d2fce.png">
 
-## future change ##
-- have to change the Float components
